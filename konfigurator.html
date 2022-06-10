@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="styl6.css">
+</head>
+<body>
+    <section>
+        <div id="left">
+            <h1>Konfigurator stylu</h1>
+            <p>Podaj kolor tła</p>
+            <input id="bgColor1" onclick="bgColorChange(this.id)" type="button" value="Indigo">
+            <input id="bgColor2" onclick="bgColorChange(this.id)" type="button" value="SteelBlue">
+            <input id="bgColor3" onclick="bgColorChange(this.id)" type="button" value="Olive">
+
+            <p>Podaj kolor czcionki</p>
+            <select onclick="textColorChange(this.id)" id="fontColor">
+                <option value="white">White</option>
+                <option value="tan">Tan</option>
+                <option value="bisque">Bisque</option>
+                <option value="plum">Plum</option>
+            </select>
+
+            <p>Podaj rozmiar czcionki w procentach, np. 200%</p>
+            <input onchange="textSizeChange()" id="fontSize" type="text" value="100%">
+
+            <p>Czy rysunek ma mieć ramkę?</p>
+            <input onclick="borderChange()" id="imgBorder" type="checkbox" checked="true">Rysuj ramkę
+
+            <p>Jaki jest typ punktora listy?</p>
+            <input name="list" onclick="listStyleChange(this.id)" type="radio" value="disc" checked="true" id="listStyle1">Dysk
+            <input name="list" onclick="listStyleChange(this.id)" type="radio" value="square" id="listStyle2">Kwadrat
+            <input name="list" onclick="listStyleChange(this.id)" type="radio" value="circle" id="listStyle3">Okrąg
+        </div>
+        <div id="right">
+            <img id="imageRight" src="gibraltar.jpg" alt="półwysep Giblartar" width="300px" height="auto">
+            <ul id="listRight">
+                <li>element1</li>
+                <li>element2</li>
+                <li>element3</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+    </section>
+    <footer id="footer">
+        Autor: thCthulhu
+    </footer>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
